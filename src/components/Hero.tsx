@@ -54,8 +54,8 @@ export function Hero() {
           onEnded={handleVideoEnded}
           className="w-full h-full object-cover object-center opacity-85 transition-all duration-1000"
         >
-          <source src="/Timeline 1.mp4" type="video/mp4" />
-          <source src="/background.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}Timeline 1.mp4`} type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}background.mp4`} type="video/mp4" />
         </video>
 
         <div 
