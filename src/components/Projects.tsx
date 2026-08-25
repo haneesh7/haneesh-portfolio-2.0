@@ -83,7 +83,7 @@ function ProjectCard({ project, index }: { project: Project, index: number }) {
               preload="auto"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
             >
-              <source src={project.video} type="video/mp4" />
+              <source src={project.video.startsWith('http') ? project.video : `${import.meta.env.BASE_URL}${project.video.replace(/^\//, '')}`} type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10 pointer-events-none" />
           </>
@@ -153,14 +153,6 @@ function ProjectCard({ project, index }: { project: Project, index: number }) {
             </span>
           ))}
         </div>
-
-        <a
-          href="#"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full glossy-card border border-amber-500/40 text-mid-gold text-xs hover:bg-amber-500/20 hover:border-amber-300 transition-all group shadow-[0_0_15px_rgba(229,193,88,0.2)]"
-        >
-          <span>VIEW PROJECT DETAILS</span>
-          <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform text-amber-400" />
-        </a>
       </motion.div>
     </motion.div>
   );

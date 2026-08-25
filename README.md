@@ -1,20 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Haneesh Gowda R — AI & ML Engineer Portfolio
 
-# Run and deploy your AI Studio app
+Welcome to the official repository for my personal portfolio website, featuring interactive 3D elements, dynamic typography, project showcases, and tech arsenal.
 
-This contains everything you need to run your app locally.
+## 🚀 Built With
+- **React 19** & **TypeScript**
+- **Vite** for fast bundling
+- **TailwindCSS** & **Custom CSS Design Tokens**
+- **Framer Motion / Motion** for GPU-accelerated micro-animations
+- **Lucide Icons**
 
-View your app in AI Studio: https://ai.studio/apps/c8574700-d7a9-40de-a4a8-7be26cff19d8
+## 🛠️ Local Development
+To run this project locally:
 
-## Run Locally
+```bash
+# Install dependencies
+npm install
 
-**Prerequisites:**  Node.js
+# Start local development server
+npm run dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) or [http://localhost:5173](http://localhost:5173) in your browser.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📦 Build & Deployment
+
+```bash
+# Create production build
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+---
+© 2026 Haneesh Gowda R. All rights reserved.
